@@ -2,7 +2,12 @@ local config = {
  plugins = {
    init = {
      { "justinmk/vim-sneak" }
-   }
+   },
+   -- bufferline = {
+   --   options = {
+   --     mode = "tabs"
+   --   }
+   -- }
  },
  mappings = {
    n = {
