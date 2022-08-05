@@ -1,7 +1,8 @@
 local config = {
  plugins = {
    init = {
-     { "justinmk/vim-sneak" }
+     { "justinmk/vim-sneak" },
+     { "vimoxide/vim-cinnabar"},
    },
    -- bufferline = {
    --   options = {
@@ -9,6 +10,7 @@ local config = {
    --   }
    -- }
  },
+ colorscheme = "cinnabar",
  mappings = {
    n = {
      ["<leader>gN"] = { function() vim.diagnostic.goto_next() end, desc = "Next diagnostic" }, 
