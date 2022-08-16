@@ -13,8 +13,8 @@ local config = {
  colorscheme = "cinnabar",
  mappings = {
    n = {
-     ["<leader>gnn"] = { function() vim.diagnostic.goto_next() end, desc = "Next diagnostic" }, 
-     ["<leader>gnp"] = { function() vim.diagnostic.goto_prev() end, desc = "Previous diagnostic" }
+     ["<leader>lnn"] = { function() vim.diagnostic.goto_next() end, desc = "Next diagnostic" }, 
+     ["<leader>lnp"] = { function() vim.diagnostic.goto_prev() end, desc = "Previous diagnostic" }
    }
  } 
 }
