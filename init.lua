@@ -1,7 +1,7 @@
 local config = {
  plugins = {
    init = {
-     { "justinmk/vim-sneak" },
+     { "ggandor/lightspeed.nvim" },
      { "vimoxide/vim-cinnabar"},
    },
    -- bufferline = {
