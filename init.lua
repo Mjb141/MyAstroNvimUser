@@ -10,7 +10,7 @@ local config = {
    --   }
    -- }
  },
- colorscheme = "cinnabar",
+ -- colorscheme = "cinnabar",
  default_theme = {
    highlights = function(hi)
      local C = require "default_theme.colors"
