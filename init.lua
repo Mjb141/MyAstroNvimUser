@@ -1,24 +1,23 @@
-local config = {
+return {
     plugins = {
         init = {
             { "ggandor/lightspeed.nvim" },
             { "vimoxide/vim-cinnabar" },
         },
     },
-    default_theme = {
-        highlights = function(hi)
-            local C = require "default_theme.colors"
-            hi.Normal = { bg = C.none, ctermbg = C.none }
-            hi.CursorColumn = { cterm = {}, ctermbg = C.none, ctermfg = C.none }
-            hi.CursorLine = { cterm = {}, ctermbg = C.none, ctermfg = C.none }
-            hi.CursorLineNr = { cterm = {}, ctermbg = C.none, ctermfg = C.none }
-            hi.LineNr = {}
-            hi.SignColumn = {}
-            hi.StatusLine = {}
-            hi.NeoTreeNormal = { bg = C.none, ctermbg = C.none }
-            hi.NeoTreeNormalNC = { bg = C.none, ctermbg = C.none }
-            return hi
-        end,
+    highlights = {
+        init = {
+            Normal = { bg = "NONE", ctermbg = "NONE" },
+            NormalNC = { bg = "NONE", ctermbg = "NONE" },
+            CursorColumn = { cterm = {}, ctermbg = "NONE", ctermfg = "NONE" },
+            CursorLine = { cterm = {}, ctermbg = "NONE", ctermfg = "NONE" },
+            CursorLineNr = { cterm = {}, ctermbg = "NONE", ctermfg = "NONE" },
+            LineNr = {},
+            SignColumn = {},
+            StatusLine = {},
+            NeoTreeNormal = { bg = "NONE", ctermbg = "NONE" },
+            NeoTreeNormalNC = { bg = "NONE", ctermbg = "NONE" },
+        }
     },
     mappings = {
         n = {
@@ -27,5 +26,3 @@ local config = {
         }
     }
 }
-
-return config
